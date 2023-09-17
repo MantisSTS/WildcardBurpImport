@@ -14,8 +14,8 @@ import (
 type ScopeImport struct {
 	Target struct {
 		Scope struct {
-			AdvancedMode bool  `json:"advanced_mode"`
-			Exclude      []any `json:"exclude,omitempty"`
+			AdvancedMode bool          `json:"advanced_mode"`
+			Exclude      []interface{} `json:"exclude,omitempty"`
 			Include      []struct {
 				Enabled  bool   `json:"enabled"`
 				Host     string `json:"host"`
